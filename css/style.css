@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #1a1a1a;
+  --todo-bg-color: #3b3a3a;
+  --text-color: #ffffff;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.todo-main {
+  background-color: var(--todo-bg-color);
+  min-width: 30%;
+  max-width: 60%;
+  min-height: 30%;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.todo-header .todo-text {
+  padding: 0.75em;
+  line-height: 90%;
+  width: 75%;
+}
+
+.todo-header .todo-text:focus {
+  outline: none;
+}
+
+.todo-header .add-button {
+  padding: 0.75em;
+  background-color: blue;
+  color: var(--text-color);
+}
+
+.todo-body {
+  padding: 1em;
+}
+
+.todo-body .todo-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item {
+  background-color: #5a5a5a;
+  width: 95%;
+  height: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5em;
+}
+.todo-item button {
+  height: 100%;
+  width: 15%;
+  font-size: 1.03em;
+  color: var(--text-color);
+  background-color: red;
+  padding: 0.15em;
+}
+
+.completed {
+  background-color: #4b4c4c;
+}
