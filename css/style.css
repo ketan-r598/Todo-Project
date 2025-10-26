@@ -34,9 +34,9 @@ body {
 }
 
 .todo-header .todo-text {
-  padding: 0.75em;
-  line-height: 90%;
+  padding-left: 1em;
   width: 75%;
+  padding-right: 1em;
 }
 
 .todo-header .todo-text:focus {
@@ -44,7 +44,7 @@ body {
 }
 
 .todo-header .add-button {
-  padding: 0.75em;
+  padding: 0.25em;
   background-color: blue;
   color: var(--text-color);
 }
@@ -82,4 +82,5 @@ body {
 
 .completed {
   background-color: #4b4c4c;
+  text-decoration: line-through;
 }
